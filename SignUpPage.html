@@ -120,15 +120,15 @@
                     <option value="31">31</option>
                 </select>
                 <select id="year"></select>
-                <script>
+                <script type="text/javascript">
                         var start = 1900;
                         var end = new Date().getFullYear();
                         var options = "";
-                        for (var year = start; i <= end; year++) {
-                            options = "<option>" + year + "</option>";
+                        for (var year = start; year <= end; year++) {
+                            options += "<option>" + year + "</option>";
                         }
                         document.getElementById("year").innerHTML = options;
-                </script><br><br>
+                </script></select><br><br>
                 Gender<br>
                 <input type="radio" name="gender" value="male" checked>Male
                 <input type="radio" name="gender" value="female" checked>Female
